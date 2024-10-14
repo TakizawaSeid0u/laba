@@ -9,16 +9,21 @@ b = int(c / 2)
 n = 0
 if int(v) > 1:
     if int(o) < int(v):
-        if int(b) > int(o):
-            output_data = open('output.txt','w')
-            output_data.write(str(v))
-            input_data.close
-            output_data.close
-        else:
+        if int(b) > int(v):
             output_data = open('output.txt','w')
             output_data.write(str(o))
             input_data.close
             output_data.close
+        else:
+            output_data = open('output.txt','w')
+            output_data.write(str(b))
+            input_data.close
+            output_data.close
+    else:
+        output_data = open('output.txt','w')
+        output_data.write(str(v))
+        input_data.close
+        output_data.close
 else:
     output_data = open('output.txt','w')
     output_data.write(str(n))
